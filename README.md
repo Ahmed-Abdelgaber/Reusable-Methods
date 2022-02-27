@@ -10,7 +10,7 @@ You can also use deleteCahce middel ware befor to clear cached data manualy by p
 ### Using cach file
 
 -   require cach file
-    `const deleteCahce = require('cahce-file-path');`
+    ![alt text](./cach-photo/carbon.png)
 
 -   chain cach function to the query (you dont have to provide an upper key and all data will be stored in the same cluster)
     `app.get('APIURL', async (req, res) => { const data = await Collection.find({ cond: 'cond'}).cache({ key: upperKey }); res.send(data); });`
