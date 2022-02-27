@@ -72,8 +72,8 @@ mongoose.Query.prototype.exec = async function () {
  1- Use async await to use a little trick to run the next function firtst
  2- then delete the cached data using the upperKey
  */
-exports.deleteCahce = async (upperKey) => {
-    return (req, res, next) => {
+exports.deleteCahce = (upperKey) => {
+    return async (req, res, next) => {
         await next();
         client.del(JSON.stringify(upperKey));
     };
