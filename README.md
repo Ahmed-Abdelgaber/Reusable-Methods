@@ -6,24 +6,16 @@
     Cach function has an optional object argument to provide customized upper key.
     You can also use deleteCahce middel ware befor to clear cached data manualy by providing the upper key
 
-    ###Using cach file
+    ##Using cach file
 
     - require cach file
-    `const deleteCahce = require('cahce-file-path');`
+    ![alt require cach file](./cach-photo/carbon.png)
 
-    - chain cach function to the query (you dont have to provide an upper key and all data will be stored in the same cluster)
-    `app.get('APIURL', async (req, res) => {
-    const data = await Collection.find({ cond: 'cond'}).cache({
-      key: upperKey
-    });
-    res.send(data);
-    });`
+    - chain cach function to the query
+     (you dont have to provide an upper key and all data will be stored in the same cluster)
+    ![alt chain cach](./cach-photo/carbon (1).png)
 
     - delete cach
-    ` app.post('APIURL',deleteCahce(upperKey), async (req, res) => {
-     const { data} = req.body;
-     const data = new data({
-         data : data
-    });`
+    ![alt delete cach](./cach-photo/carbon (2).png)
 
 [LinkedIn](https://www.linkedin.com/in/ahmed-abdelgaber/)
