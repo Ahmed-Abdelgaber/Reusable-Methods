@@ -57,7 +57,7 @@ mongoose.Query.prototype.exec = async function () {
             ? docs.map((doc) => {
                   new this.model(doc);
               })
-            : this.model(docs);
+            : new this.model(docs);
     }
 
     const data = await exec.apply(this, arguments);
@@ -69,7 +69,7 @@ mongoose.Query.prototype.exec = async function () {
 
 /**
  Make a middelware to use when deleting cached data 
- 1- Use async await to use a little trick to run the next function firtst
+ 1- Use async await to use a little trick to run the next function first
  2- then delete the cached data using the upperKey
  */
 exports.deleteCahce = (upperKey) => {
