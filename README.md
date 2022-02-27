@@ -16,6 +16,6 @@ You can also use deleteCahce middel ware befor to clear cached data manualy by p
     ![alt text](./cach-photo/carbon-1.png)
 
 -   delete cach
-    ![alt text](./cach-photo/carbon-2.png)
+    ![alt text](./cach-photo/carbon-3.png)
 
 [LinkedIn](https://www.linkedin.com/in/ahmed-abdelgaber/)
